@@ -1,0 +1,9 @@
+name: gmPlugin
+version: '${project.version}'
+main: de.philippcmd.gmplugin.GmPlugin
+api-version: '1.20'
+commands:
+  gm:
+    usage: "Usage: /gm <1|2|3|4> (Player)"
+    permission: op
+
