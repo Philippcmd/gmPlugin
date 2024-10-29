@@ -32,7 +32,8 @@ public class gmCommand implements CommandExecutor {
             } else {
                 player.sendMessage("Usage: /gm <1|2|3|4>");
             }
-        } else if (strings.length == 2) {
+        } else if (strings.length == 3) {
+            Player target = Bukkit.getPlayer(strings[2]);
             if (strings[0].equalsIgnoreCase("1")) {
                 target.setGameMode(GameMode.CREATIVE);
                 target.sendMessage("You are now in Creative mode");
