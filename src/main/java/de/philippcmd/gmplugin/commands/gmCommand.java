@@ -15,7 +15,7 @@ public class gmCommand implements CommandExecutor {
             return false;
         }
         Player player = (Player) commandSender;
-        Player target = Bukkit.getPlayer(strings[2]);
+
         if (strings.length == 1) {
             if (strings[0].equalsIgnoreCase("1")) {
                 player.setGameMode(GameMode.CREATIVE);
@@ -31,27 +31,6 @@ public class gmCommand implements CommandExecutor {
                 player.sendMessage("You are now in Spectator mode");
             } else {
                 player.sendMessage("Usage: /gm <1|2|3|4>");
-            }
-        } else if (strings.length == 3) {
-            Player target = Bukkit.getPlayer(strings[2]);
-            if (strings[0].equalsIgnoreCase("1")) {
-                target.setGameMode(GameMode.CREATIVE);
-                target.sendMessage("You are now in Creative mode");
-            } else if (strings[0].equalsIgnoreCase("2")) {
-                target.setGameMode(GameMode.SURVIVAL);
-                target.sendMessage("You are now in Survival mode");
-            } else if (strings[0].equalsIgnoreCase("3")) {
-                target.setGameMode(GameMode.ADVENTURE);
-                target.sendMessage("You are now in Adventure mode");
-            } else if (strings[0].equalsIgnoreCase("4")) {
-                target.setGameMode(GameMode.SPECTATOR);
-                target.sendMessage("You are now in Spectator mode");
-            } else {
-                player.sendMessage("Usage: /gm <1|2|3|4>");
-            }
-
-            if (target == null) {
-                player.sendMessage("This player is not online");
             }
 
         }else {

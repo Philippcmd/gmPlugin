@@ -4,6 +4,7 @@ main: de.philippcmd.gmplugin.GmPlugin
 api-version: '1.20'
 commands:
   gm:
+    description: can change the gamemode of players
     usage: "Usage: /gm <1|2|3|4> (Player)"
-    permission: op
+    permission: gm.use
 
