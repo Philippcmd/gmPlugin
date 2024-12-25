@@ -1,18 +1,15 @@
-package de.philippcmd.gmplugin;
+package de.philippcmd.gmplugin
 
-import de.philippcmd.gmplugin.commands.gmCommand;
-import org.bukkit.plugin.java.JavaPlugin;
+import de.philippcmd.gmplugin.commands.gmCommand
+import org.bukkit.plugin.java.JavaPlugin
 
-public final class GmPlugin extends JavaPlugin {
-
-    @Override
-    public void onEnable() {
+class GmPlugin : JavaPlugin() {
+    override fun onEnable() {
         // Plugin startup logic
-        getCommand("gm").setExecutor(new gmCommand());
+        getCommand("gm")!!.setExecutor(gmCommand())
     }
 
-    @Override
-    public void onDisable() {
+    override fun onDisable() {
         // Plugin shutdown logic
     }
 }
