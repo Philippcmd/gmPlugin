@@ -1,6 +1,6 @@
 name: gmPlugin
 version: '${project.version}'
-main: de.philippcmd.gmplugin.GmPlugin
+main: de.philippcmd.gmplugin.GameModePlugin
 api-version: '1.20'
 commands:
   gm:
